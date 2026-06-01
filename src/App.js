@@ -235,6 +235,7 @@ export default function App() {
 
   const [tab, setTab] = useState('dashboard');
   const [notifs, setNotifs] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [menuOpen, setMenuOpen] = useState(false);
 
   const addNotif = useCallback((msg, type = 'info') => {
@@ -249,6 +250,7 @@ export default function App() {
     if (hoje.length > 0) addNotif(`📅 ${hoje.length} sessão(ões) agendada(s) para hoje!`, 'info');
     const pend = sessoes.filter((s) => !s.pago && s.status === 'realizado');
     if (pend.length > 0) addNotif(`💰 ${pend.length} sessão(ões) aguardando pagamento.`, 'warn');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, sessoes.length]);
 
   // PWA: registrar service worker
@@ -487,7 +489,7 @@ function Prontuarios({ prontuarios, addPron, updatePron, clients, clienteById, a
   const [formPron, setFormPron] = useState(null);
   const [gerando, setGerando] = useState('');
 
-  useEffect(() => { if (!selected && prontuarios.length > 0) setSelected(prontuarios[0].id); }, [prontuarios]);
+  useEffect(() => { if (!selected && prontuarios.length > 0) setSelected(prontuarios[0].id); }, [prontuarios]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const pron = prontuarios.find((p) => p.id === selected);
   const cliente = pron ? clienteById(pron.clienteId) : null;
