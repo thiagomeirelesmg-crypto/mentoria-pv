@@ -1,0 +1,25 @@
+{
+  "short_name": "Mentoria PV",
+  "name": "Propósito Vivo — Gestão de Mentoria",
+  "description": "Sistema de gestão de mentoria parental — Método Pais com Propósito",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#e8a838",
+  "background_color": "#0d1117",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "health", "education"]
+}
