@@ -1,7 +1,5 @@
 // src/components/WhatsApp.js
 import React, { useState } from 'react';
-import { claudeAPI } from '../hooks/useClaude';
-
 const TEMPLATES = [
   { id:'tarefa', label:'Tarefa da Sessão', texto: (nome, tarefa) =>
     `Olá, ${nome}! 🌟\n\nFoi um prazer nossa sessão hoje!\n\nSua tarefa para essa semana:\n\n${tarefa}\n\nQualquer dúvida, pode me chamar. Você está no caminho certo! 💛\n\n— Thiago Meireles\nPropósito Vivo | Método Pais com Propósito` },

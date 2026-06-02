@@ -9,8 +9,6 @@ const PILARES = [
 ];
 
 const today = () => new Date().toISOString().split('T')[0];
-const fmtDate = (d) => d ? new Date(d+'T12:00').toLocaleDateString('pt-BR') : '—';
-const fmt = (v) => v != null ? v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) : '—';
 
 const S = {
   page: { padding:'24px', maxWidth:1100, margin:'0 auto' },
@@ -31,7 +29,6 @@ const S = {
 
 export default function Importar({ addNotif, onImportado }) {
   const [modo, setModo] = useState('json'); // 'json' | 'manual'
-  const [arquivo, setArquivo] = useState(null);
   const [preview, setPreview] = useState(null);
   const [importing, setImporting] = useState(false);
   const [erro, setErro] = useState('');
