@@ -2,8 +2,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useAuth } from './hooks/useAuth';
 import { useCollection } from './hooks/useCollection';
 import Login from './components/Login';
-import Importar from './components/Importar';
-import WhatsApp from './components/WhatsApp';
 
 // ─── Constantes ───────────────────────────────────────────────────────────────
 const MENTOR = {
@@ -276,8 +274,6 @@ export default function App() {
     { id: 'agenda', icon: '◷', label: 'Agenda' },
     { id: 'financeiro', icon: '$', label: 'Financeiro' },
     { id: 'documentos', icon: '◧', label: 'Documentos' },
-    { id: 'whatsapp', icon: '💬', label: 'WhatsApp' },
-    { id: 'importar', icon: '⬆', label: 'Importar' },
   ];
 
   return (
@@ -338,8 +334,6 @@ export default function App() {
         {tab === 'agenda' && <Agenda sessoes={sessoes} addSessao={addSessao} updateSessao={updateSessao} removeSessao={removeSessao} clients={clients} clienteById={clienteById} financeiro={financeiro} addFinanceiro={addFinanceiro} addNotif={addNotif} />}
         {tab === 'financeiro' && <Financeiro financeiro={financeiro} addFinanceiro={addFinanceiro} sessoes={sessoes} updateSessao={updateSessao} clienteById={clienteById} totalRecebido={totalRecebido} totalPendente={totalPendente} addNotif={addNotif} />}
         {tab === 'documentos' && <Documentos clients={clients} sessoes={sessoes} prontuarios={prontuarios} clienteById={clienteById} addNotif={addNotif} />}
-        {tab === 'whatsapp' && <WhatsApp clients={clients} prontuarios={prontuarios} sessoes={sessoes} addNotif={addNotif} />}
-        {tab === 'importar' && <Importar addNotif={addNotif} onImportado={() => setTab('clientes')} />}
       </main>
     </div>
   );
