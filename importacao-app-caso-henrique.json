@@ -1,0 +1,281 @@
+{
+  "anamnese": {
+    "identificacao": {
+      "nomeCompleto": "Lígia e Eduardo (processo familiar — inclui Henrique, 18 anos)",
+      "dataNascimento": "",
+      "idade": "Lígia: 51 anos | Eduardo: 53 anos",
+      "telefone": "",
+      "email": "",
+      "enderecoCidade": "Marília/SP",
+      "estadoCivil": "Casados",
+      "profissao": "Lígia: Pedagoga / Especialista em Educação Especial | Eduardo: Empresário (bar de karaokê)",
+      "comoFicouSabendo": "Indicação direta de Thiago Meireles, ex-coordenador da Cristolândia Criança e figura de referência para o filho adotivo Henrique"
+    },
+    "contextoFamiliar": {
+      "nomeConjuge": "Eduardo",
+      "tempoDeUniao": "Desde 2020 (morando juntos)",
+      "filhos": "Henrique, 18 anos — filho adotivo em processo de adoção tardia (desacolhido em novembro de 2025)",
+      "configuracaoFamiliar": "Família adotiva",
+      "comQuemReside": "Com Lígia e Eduardo em Marília/SP",
+      "outrosCuidadores": "Thiago Meireles — figura de vínculo seguro para Henrique (ex-coordenador da Cristolândia Criança). Mãe de Eduardo trabalha com ele."
+    },
+    "historicoEstiloParental": {
+      "estiloAtual": "Permissivo (Eduardo) e Autoritativo em construção (Lígia)",
+      "maioresDesafios": "Lígia: esgotamento por acumular todos os papéis parentais. Necessidade não atendida de receber afeto verbal de Henrique. Dificuldade em ajustar expectativa do filho ideal para o filho real. Sentimento de estar sozinha no papel de autoridade.\n\nEduardo: paternidade ainda em construção. Nunca teve desejo forte de ser pai. Dificuldade de colocar limites com firmeza. Funciona como pai-amigo sem confronto. Esperava que Henrique fosse braço direito no trabalho e em casa.",
+      "relacaoComProprioPais": "Lígia: criada pela mãe japonesa com pressão intensa de estudos e pouco espaço para afeto espontâneo. Pai brasileiro pouco amoroso. Aprendeu a ser amorosa somente no primeiro casamento.\n\nEduardo: pai rígido e exigente com estudos. Referência de paternidade por cobranças, não por vínculo afetivo. Pai faleceu em 2003.",
+      "historicoDeTroumasPerdas": "Lígia: traumas físicos (barulho, injeção, vômito) que a impediram de buscar maternidade biológica. Frustração por não poder gestar. Casamento anterior de 20 anos encerrado.\n\nEduardo: luto do pai em 2003. Covid grave em 2020.\n\nHenrique: mãe biológica falecida aos 3 anos (AIDS), pai biológico falecido aos 12 anos (atropelamento), abandono pela tia paterna, anos em situação de vulnerabilidade — lava-jato, abrigo, Cristolândia Criança."
+    },
+    "demandaPrincipal": {
+      "porqueBuscouMentoria": "Crise grave em 03/05/2026: casal descobriu tatuagem feita por Henrique sem consentimento. Após ultimato (remover ou sair), Henrique saiu de casa e foi até Guarulhos. Chegou à casa de Thiago às 1h30 da madrugada. Após mediação, voltou para Marília. Casal reconheceu necessidade de suporte profissional para atravessar o processo de adoção tardia sem rupturas.",
+      "oQueEsperaAlcancar": "Construir vínculo seguro e duradouro com Henrique. Aprender a exercer autoridade afetiva sem romper a relação. Compreender os comportamentos de Henrique pela lente do trauma e do apego. Reorganizar os papéis parentais para que o casal funcione como frente unida. Criar ambiente onde Henrique sinta que pode errar e continuar pertencendo.",
+      "processoAnterior": "Sim — terapia de casal iniciada durante o processo de mentoria como recurso de suporte conjugal",
+      "processoAnteriorDetalhes": "Terapia de casal em andamento. Objetivo: suporte ao casal durante o processo de adoção tardia."
+    },
+    "autoavaliacao": {
+      "pilares": {
+        "1_identidadeParental": 3,
+        "2_comunicacaoComPropósito": 2,
+        "3_vinculosEAfeto": 3,
+        "4_limitesComAmor": 2,
+        "5_disciplinaConsciente": 2,
+        "6_legadoEValores": 3
+      }
+    },
+    "disponibilidadeLogistica": {
+      "diasDisponiveis": ["Terça"],
+      "horarioPreferido": "14h (casal) | 09h (Henrique)",
+      "modalidade": "Online / Presencial",
+      "sessoes": 16,
+      "valorPorSessao": 75.00,
+      "valorTotal": 1200.00,
+      "formaPagamento": "PIX à vista"
+    }
+  },
+
+  "prontuario": {
+    "identificacao": {
+      "nomeMentorando": "Lígia e Eduardo — processo familiar (Henrique, 18 anos)",
+      "dataInicio": "2026-05-11",
+      "previsaoEncerramento": "2026-06-30",
+      "totalSessoesContratadas": 16,
+      "valorPorSessao": 75.00,
+      "objetivoCentral": "Construir vínculo seguro entre casal adotivo e Henrique. Reorganizar papéis parentais. Trabalhar os três pilares do TBRI para atravessar o processo de adoção tardia sem rupturas relacionais."
+    },
+
+    "pilaresTrabalho": [
+      "1. Identidade Parental",
+      "2. Comunicação com Propósito",
+      "3. Vínculos e Afeto",
+      "4. Limites com Amor",
+      "5. Disciplina Consciente"
+    ],
+    "pilarPrincipal": "3. Vínculos e Afeto",
+
+    "planoIntervencao": {
+      "descricaoCaso": "Família adotiva em processo de adaptação. Adoção tardia de Henrique (18 anos). Casal sem filhos anteriores, faixa dos 50 anos, Marília/SP. Henrique com histórico severo: mãe falecida aos 3 anos (AIDS), pai falecido aos 12 anos, anos em situação de vulnerabilidade (tia, lava-jato, abrigo, Cristolândia Criança). Padrão de apego desorganizado com estratégia evitativa consolidada. Triângulo disfuncional instalado: Lígia cobra, Henrique foge para Eduardo, Eduardo não confronta, Lígia se isola. Crise grave em maio de 2026 motivou contratação da mentoria.",
+      "metasEspecificas": "1. Reorganizar papéis parentais: Eduardo como pai ativo com firmeza afetiva; Lígia com expectativas ajustadas sobre linguagem de afeto de Henrique.\n2. Interromper o triângulo disfuncional e construir frente conjugal unida.\n3. Trabalhar os três pilares TBRI: Conexão antes da correção, Regulação antes da exigência, Correção com vínculo e propósito.\n4. Construir protocolo de despertar e rotina semanal de conexão com Henrique.\n5. Explorar e trabalhar o medo de machucar fisicamente revelado por Henrique.\n6. Abordar fator de risco: contato de Henrique com jovem de grupo de risco.",
+      "recursosLeituras": "TBRI (Purvis e Cross) — The Connected Child. Siegel, D. — Brainstorm: o poder e o propósito do cérebro adolescente. Van der Kolk, B. — O Corpo Guarda as Marcas. Nelsen, J. — Disciplina Positiva. Documentos compartilhados via WhatsApp: análise do caso, psicoeducação sobre sono, pilares TBRI, rotina de conexão semanal."
+    },
+
+    "sessoes": [
+      {
+        "numero": 1,
+        "data": "2026-05-11",
+        "modalidade": "Presencial",
+        "pilarTrabalhado": "3. Vínculos e Afeto",
+        "objetivo": "Apresentação do processo de mentoria. Escuta de cada membro da família. Estabelecimento de aliança terapêutica e pacto de continuidade.",
+        "registroEvolucao": "Primeira sessão com família toda (Lígia, Eduardo e Henrique). Casal chegou triste e decepcionado com mentiras e agressividade de Henrique. Lígia relata se sentir cuidada por ele. Eduardo o sente como companheiro. Henrique presente e fechado. Diz que o mais difícil é escola, inglês e trabalho. Revelou: tenho medo de mim mesmo, medo de machucar fisicamente eles. Não revelou o fato específico. Ciclo do medo nomeado sem culpados. Pacto dos 30 dias estabelecido.",
+        "tarefa": "Eduardo: apoiar publicamente a posição da Lígia com Henrique ao menos uma vez na semana. Lígia: observar um gesto de afeto de Henrique do jeito dele. Casal: 5 minutos de alinhamento antes de qualquer abordagem com Henrique.",
+        "feedbackMentorando": "Casal receptivo e aliviado com a mediação. Henrique pouco verbal mas presente. Ambiente emocional tenso na chegada, mais estável na saída."
+      },
+      {
+        "numero": 2,
+        "data": "2026-05-13",
+        "modalidade": "Online",
+        "pilarTrabalhado": "1. Identidade Parental / 3. Vínculos e Afeto",
+        "objetivo": "Anamnese do casal. Questionários sobre filho ideal versus filho real. Identificação do triângulo disfuncional. Apresentação dos três pilares do TBRI.",
+        "registroEvolucao": "Anamnese detalhada de Lígia e Eduardo. Questionários respondidos individualmente. Devolutiva clínica: filho ideal de Lígia (estudioso, comunicativo, que se assemelharia a ela) versus Henrique real. Filho ideal de Eduardo (braço direito, participativo) versus Henrique real. Triângulo disfuncional nomeado sem culpados. Eduardo chamado à paternidade ativa com firmeza. Lígia orientada sobre linguagem de afeto de Henrique. Três pilares TBRI apresentados como fio condutor do processo.",
+        "tarefa": "Cada um escreve: o filho que imaginava e o Henrique que está conhecendo. Compartilhar entre si antes da próxima sessão sem julgamento.",
+        "feedbackMentorando": "Eduardo demonstrou honestidade ao admitir que nunca teve desejo forte de ser pai. Lígia verbalizou o esgotamento com clareza. Ambos receptivos à leitura clínica do triângulo."
+      },
+      {
+        "numero": 3,
+        "data": "2026-05-13",
+        "modalidade": "Online",
+        "pilarTrabalhado": "3. Vínculos e Afeto",
+        "objetivo": "Primeira sessão individual com Henrique. Anamnese de história de vida. Exploração de vínculos significativos e perdas.",
+        "registroEvolucao": "Autodescricão: bom, legal, dorminhoco. Pai: pessoa boa, batia quando bebia. Memória favorita: comprar doces. Pai faleceu atropelado quando voltava de festa. Henrique estava na mesma festa mas voltou antes. Mãe biológica falecida quando tinha 3 anos (AIDS). Tia Valéria: 2 anos, conflito, colocado para fora. Lava-jato: morou e trabalhou quase 1 ano. Sra. Meire acolheu, apresentou Eduardo anterior. Saiu por não querer estudar. Cristolândia: adaptação em 2 semanas, figura de apego Tia Ana. Quer estar com a família porque gostou deles. Revelou medo de machucar fisicamente os pais, não revelou o fato específico.",
+        "tarefa": "Convite (não obrigatório): escrever ou desenhar algo sobre quem ele é.",
+        "feedbackMentorando": "Semblante sério e fechado ao falar do pai. Padrão de não recordar motivos dos conflitos vividos (dissociação). Receptivo ao vínculo com Thiago."
+      },
+      {
+        "numero": 4,
+        "data": "2026-05-20",
+        "modalidade": "Online",
+        "pilarTrabalhado": "4. Limites com Amor / 2. Comunicação com Propósito",
+        "objetivo": "Realinhamento do casal. Devolutiva dos questionários. Nomeação do triângulo disfuncional. Trabalho sobre papéis parentais.",
+        "registroEvolucao": "Devolutiva individual dos questionários. Triângulo disfuncional ilustrado sem culpados. Eduardo chamado à escolha ativa de ser pai com firmeza afetiva. Lígia orientada sobre ajuste da expectativa de retorno afetivo. Construção de frente conjugal unida. Orientação sobre comportamento de se apropriar de objetos para vender (raiz de sobrevivência da rua). Devolutiva enviada via WhatsApp com análise clínica completa: quem é cada um nesse cenário familiar.",
+        "tarefa": "Eduardo: apoiar publicamente a posição da Lígia com Henrique ao menos uma vez. Lígia: observar momento de cuidado de Henrique do jeito dele. Casal: 5 minutos de alinhamento antes de qualquer abordagem. Se precisar repreender Henrique, priorizar Eduardo.",
+        "feedbackMentorando": "Lígia emocionada ao ver seu esgotamento nomeado. Eduardo reflexivo sobre o próprio papel. Ambos receptivos à leitura clínica."
+      },
+      {
+        "numero": 5,
+        "data": "2026-05-20",
+        "modalidade": "Online",
+        "pilarTrabalhado": "3. Vínculos e Afeto / 5. Disciplina Consciente",
+        "objetivo": "Verificar cumprimento da tarefa do perdão. Trabalhar identidade e pertencimento. Abordar fator de risco.",
+        "registroEvolucao": "Semana normal segundo Henrique. Não pediu perdão. Ao ser questionado respondeu porque não com exaltação intensa e gritos. Thiago contornou a desregulação. Dinâmica: Henrique se imagina como pai com filho que contrariou seu direcionamento. Respondeu que se sentiria triste, bravo e magoado. Disse que filho deveria pagar pelo erro inclusive com a liberdade. Trabalho sobre honra versus obediência e conceito de guarda-chuva emocional. Henrique demonstrou entendimento gradual. Considerou pensar em pedir perdão. Terminou ruminando algo amargo mas necessário. Temas restantes não avançados por conta da desregulação.",
+        "tarefa": "Considerar pedir perdão ao casal pela mentira da tatuagem, agressividade e saída com a menina de risco.",
+        "feedbackMentorando": "Raiva intensa ao ser questionado sobre o perdão. Pedir perdão ativa ameaça existencial para ele. Senso de justiça rígido e punitivo. Semente plantada, precisa de tempo."
+      },
+      {
+        "numero": 6,
+        "data": "2026-05-27",
+        "modalidade": "Online",
+        "pilarTrabalhado": "3. Vínculos e Afeto — TBRI Pilar 1",
+        "objetivo": "Conexão antes da correção. Identificar e construir momentos concretos de conexão com Henrique. Diferença entre conexão e permissividade.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 7,
+        "data": "2026-05-27",
+        "modalidade": "Online",
+        "pilarTrabalhado": "3. Vínculos e Afeto",
+        "objetivo": "Verificar pedido de perdão. Aprofundar medo de machucar. Abordar fator de risco com linguagem de cuidado.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 8,
+        "data": "2026-06-03",
+        "modalidade": "Online",
+        "pilarTrabalhado": "5. Disciplina Consciente — TBRI Pilar 2",
+        "objetivo": "Regulação emocional. Reconhecer sinais de desregulação em Henrique e intervir adequadamente.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 9,
+        "data": "2026-06-03",
+        "modalidade": "Online",
+        "pilarTrabalhado": "4. Limites com Amor",
+        "objetivo": "Limites, acordos e responsabilidades graduais com Henrique.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 10,
+        "data": "2026-06-08",
+        "modalidade": "Online",
+        "pilarTrabalhado": "2. Comunicação com Propósito",
+        "objetivo": "Mediação familiar. Tradução dos conflitos. Construção de acordos relacionais.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 11,
+        "data": "2026-06-10",
+        "modalidade": "Online",
+        "pilarTrabalhado": "4. Limites com Amor — TBRI Pilar 3",
+        "objetivo": "Correção com vínculo e propósito. Autoridade sem ruptura.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 12,
+        "data": "2026-06-10",
+        "modalidade": "Online",
+        "pilarTrabalhado": "3. Vínculos e Afeto",
+        "objetivo": "Henrique no sistema familiar. Lugar e pertencimento.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 13,
+        "data": "2026-06-17",
+        "modalidade": "Online",
+        "pilarTrabalhado": "TBRI Integrado — todos os pilares",
+        "objetivo": "Prática integrada dos três pilares no cotidiano. Plano prático de convivência.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 14,
+        "data": "2026-06-17",
+        "modalidade": "Online",
+        "pilarTrabalhado": "1. Identidade Parental",
+        "objetivo": "Projeto de futuro de Henrique. Escola, trabalho e sonhos.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 15,
+        "data": "2026-06-24",
+        "modalidade": "Online",
+        "pilarTrabalhado": "6. Legado e Valores",
+        "objetivo": "Consolidação do processo. Avaliação dos três pilares. Próximos passos.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      },
+      {
+        "numero": 16,
+        "data": "2026-06-30",
+        "modalidade": "Presencial",
+        "pilarTrabalhado": "Todos os pilares",
+        "objetivo": "Encerramento e bênção familiar com toda a família.",
+        "registroEvolucao": "",
+        "tarefa": "",
+        "feedbackMentorando": ""
+      }
+    ],
+
+    "avaliacaoProgresso": {
+      "inicio": {
+        "1_identidadeParental": 3,
+        "2_comunicacaoComPropósito": 2,
+        "3_vinculosEAfeto": 3,
+        "4_limitesComAmor": 2,
+        "5_disciplinaConsciente": 2,
+        "6_legadoEValores": 3
+      },
+      "fim": {
+        "1_identidadeParental": null,
+        "2_comunicacaoComPropósito": null,
+        "3_vinculosEAfeto": null,
+        "4_limitesComAmor": null,
+        "5_disciplinaConsciente": null,
+        "6_legadoEValores": null
+      }
+    },
+
+    "conclusao": {
+      "sintese": "",
+      "resultadosAlcancados": "",
+      "encaminhamentos": "",
+      "statusEncerramento": "Em andamento"
+    }
+  },
+
+  "nome": "Lígia e Eduardo",
+  "telefone": "",
+  "objetivo": "Construir vínculo seguro entre casal adotivo e Henrique (18 anos) em processo de adoção tardia. Reorganizar papéis parentais. Trabalhar os três pilares do TBRI.",
+  "sessoes": 16,
+  "pilaresTrabalho": [
+    "1. Identidade Parental",
+    "2. Comunicação com Propósito",
+    "3. Vínculos e Afeto",
+    "4. Limites com Amor",
+    "5. Disciplina Consciente"
+  ]
+}

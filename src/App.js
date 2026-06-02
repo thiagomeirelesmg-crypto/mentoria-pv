@@ -274,6 +274,7 @@ export default function App() {
     { id: 'agenda', icon: '◷', label: 'Agenda' },
     { id: 'financeiro', icon: '$', label: 'Financeiro' },
     { id: 'documentos', icon: '◧', label: 'Documentos' },
+    { id: 'importar', icon: '⬆', label: 'Importar' },
   ];
 
   return (
@@ -334,6 +335,7 @@ export default function App() {
         {tab === 'agenda' && <Agenda sessoes={sessoes} addSessao={addSessao} updateSessao={updateSessao} removeSessao={removeSessao} clients={clients} clienteById={clienteById} financeiro={financeiro} addFinanceiro={addFinanceiro} addNotif={addNotif} />}
         {tab === 'financeiro' && <Financeiro financeiro={financeiro} addFinanceiro={addFinanceiro} sessoes={sessoes} updateSessao={updateSessao} clienteById={clienteById} totalRecebido={totalRecebido} totalPendente={totalPendente} addNotif={addNotif} />}
         {tab === 'documentos' && <Documentos clients={clients} sessoes={sessoes} prontuarios={prontuarios} clienteById={clienteById} addNotif={addNotif} />}
+        {tab === 'importar' && <Importar addClient={addClient} addPron={addPron} addSessao={addSessao} addFinanceiro={addFinanceiro} addNotif={addNotif} />}
       </main>
     </div>
   );
@@ -882,6 +884,231 @@ function Documentos({ clients, sessoes, prontuarios, clienteById, addNotif }) {
             </button>
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+
+// ─── Importação JSON ──────────────────────────────────────────────────────────
+function Importar({ addClient, addPron, addSessao, addFinanceiro, addNotif }) {
+  const [preview, setPreview] = useState(null);
+  const [importing, setImporting] = useState(false);
+  const [erro, setErro] = useState('');
+
+  const handleFile = (e) => {
+    setErro('');
+    setPreview(null);
+    const file = e.target.files[0];
+    if (!file) return;
+    if (!file.name.endsWith('.json')) return setErro('Selecione um arquivo .json');
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        // aceita array ou objeto único
+        const arr = Array.isArray(data) ? data : [data];
+        setPreview(arr);
+      } catch {
+        setErro('Arquivo JSON inválido. Verifique o formato.');
+      }
+    };
+    reader.readAsText(file);
+  };
+
+  const executarImport = async () => {
+    if (!preview || preview.length === 0) return;
+    setImporting(true);
+    let totalClientes = 0, totalPron = 0, totalSessoes = 0;
+    try {
+      for (const item of preview) {
+        // 1. Cadastrar cliente
+        const clienteRef = await addClient({
+          nome: item.nome || 'Sem nome',
+          telefone: item.telefone || '',
+          email: item.email || '',
+          objetivo: item.objetivo || '',
+          status: item.status || 'ativo',
+          dataCadastro: item.dataCadastro || today(),
+        });
+        totalClientes++;
+
+        // 2. Criar prontuário se houver
+        if (item.prontuario) {
+          const p = item.prontuario;
+          await addPron({
+            clienteId: clienteRef,
+            descricaoCaso: p.descricaoCaso || '',
+            planoTerapeutico: p.planoTerapeutico || '',
+            pilaresTrabalho: p.pilaresTrabalho || [],
+            pilarFoco: p.pilarFoco || '',
+            sessoesContratadas: p.sessoesContratadas || 10,
+            sessaoAtual: p.sessaoAtual || 1,
+            metasEspecificas: p.metasEspecificas || '',
+            recursosIndicados: p.recursosIndicados || '',
+            tarefasEntreSessoes: p.tarefasEntreSessoes || '',
+            evolucoes: p.evolucoes || [],
+            conclusao: p.conclusao || '',
+            versaoCliente: p.versaoCliente || '',
+            dataInicio: p.dataInicio || today(),
+            dataFim: p.dataFim || null,
+          });
+          totalPron++;
+        }
+
+        // 3. Criar sessões se houver
+        if (item.sessoes && Array.isArray(item.sessoes)) {
+          for (const s of item.sessoes) {
+            await addSessao({
+              clienteId: clienteRef,
+              data: s.data || today(),
+              hora: s.hora || '09:00',
+              duracao: s.duracao || 60,
+              modalidade: s.modalidade || 'online',
+              valor: s.valor || 0,
+              status: s.status || 'realizado',
+              observacoes: s.observacoes || '',
+              pago: s.pago || false,
+            });
+            totalSessoes++;
+          }
+        }
+
+        // 4. Criar lançamentos financeiros se houver
+        if (item.financeiro && Array.isArray(item.financeiro)) {
+          for (const f of item.financeiro) {
+            await addFinanceiro({
+              tipo: f.tipo || 'receita',
+              descricao: f.descricao || '',
+              valor: f.valor || 0,
+              data: f.data || today(),
+              categoria: f.categoria || 'mentoria',
+            });
+          }
+        }
+      }
+      addNotif(`✅ Importado: ${totalClientes} mentorando(s), ${totalPron} prontuário(s), ${totalSessoes} sessão(ões)!`, 'ok');
+      setPreview(null);
+    } catch (e) {
+      addNotif('Erro na importação: ' + e.message, 'warn');
+    }
+    setImporting(false);
+  };
+
+  const modeloJSON = JSON.stringify([
+    {
+      nome: "Nome do Mentorando",
+      telefone: "(11) 99999-0000",
+      email: "email@exemplo.com",
+      objetivo: "Descreva o objetivo principal do mentorando",
+      status: "ativo",
+      dataCadastro: "2026-01-01",
+      prontuario: {
+        descricaoCaso: "Descrição detalhada do caso",
+        planoTerapeutico: "Plano de intervenção",
+        pilaresTrabalho: ["2. Comunicação com Propósito", "3. Vínculos e Afeto"],
+        pilarFoco: "2. Comunicação com Propósito",
+        sessoesContratadas: 10,
+        sessaoAtual: 3,
+        metasEspecificas: "Metas específicas do processo",
+        recursosIndicados: "Livros, exercícios indicados",
+        tarefasEntreSessoes: "Tarefas práticas entre as sessões",
+        evolucoes: [
+          { sessao: "1", data: "2026-01-10", pilar: "1. Identidade Parental", texto: "Descrição da evolução da sessão 1" },
+          { sessao: "2", data: "2026-01-17", pilar: "2. Comunicação com Propósito", texto: "Descrição da evolução da sessão 2" }
+        ],
+        conclusao: "",
+        dataInicio: "2026-01-10"
+      },
+      sessoes: [
+        { data: "2026-01-10", hora: "09:00", duracao: 60, modalidade: "online", valor: 180, status: "realizado", pago: true, observacoes: "Sessão 1" },
+        { data: "2026-01-17", hora: "09:00", duracao: 60, modalidade: "online", valor: 180, status: "realizado", pago: true, observacoes: "Sessão 2" }
+      ],
+      financeiro: [
+        { tipo: "receita", descricao: "Sessão 1 — Nome do Mentorando", valor: 180, data: "2026-01-10", categoria: "mentoria" }
+      ]
+    }
+  ], null, 2);
+
+  return (
+    <div style={S.page}>
+      <PageHeader title="Importar Dados" sub="Importe mentorandos via arquivo JSON" />
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+        {/* Upload */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={S.card}>
+            <h3 style={S.cardTitle}>📂 Selecionar Arquivo JSON</h3>
+            <p style={{ fontSize: 13, color: '#9ca3af', lineHeight: 1.6, marginTop: 0 }}>
+              Selecione um arquivo <strong style={{ color: '#e8a838' }}>.json</strong> com os dados dos mentorandos no formato correto.
+            </p>
+            <input
+              type="file"
+              accept=".json"
+              onChange={handleFile}
+              style={{ display: 'none' }}
+              id="json-upload"
+            />
+            <label htmlFor="json-upload" style={{ ...S.btnPrimary, display: 'inline-block', cursor: 'pointer', marginTop: 8 }}>
+              📁 Escolher arquivo .json
+            </label>
+            {erro && (
+              <div style={{ background: '#2a1010', border: '1px solid #e05a5a', color: '#e05a5a', borderRadius: 8, padding: '10px 14px', fontSize: 13, marginTop: 12 }}>
+                ⚠️ {erro}
+              </div>
+            )}
+          </div>
+
+          {/* Preview */}
+          {preview && (
+            <div style={S.card}>
+              <h3 style={S.cardTitle}>👁 Pré-visualização</h3>
+              {preview.map((item, i) => (
+                <div key={i} style={{ background: '#0d1117', borderRadius: 8, padding: 12, marginBottom: 10 }}>
+                  <div style={{ fontWeight: 700, color: '#e8a838', fontSize: 14, marginBottom: 6 }}>
+                    {item.nome || 'Sem nome'}
+                  </div>
+                  <div style={{ fontSize: 12, color: '#7d8590', lineHeight: 1.8 }}>
+                    📞 {item.telefone || '—'}<br />
+                    🎯 {item.objetivo?.slice(0, 60) || '—'}<br />
+                    {item.prontuario && <span>📋 Prontuário: {(item.prontuario.evolucoes || []).length} evolução(ões)<br /></span>}
+                    {item.sessoes && <span>📅 {item.sessoes.length} sessão(ões)<br /></span>}
+                  </div>
+                </div>
+              ))}
+              <button
+                style={{ ...S.btnPrimary, width: '100%', marginTop: 8, opacity: importing ? 0.6 : 1 }}
+                onClick={executarImport}
+                disabled={importing}
+              >
+                {importing ? '⏳ Importando...' : `✅ Confirmar e Importar ${preview.length} mentorando(s)`}
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Modelo */}
+        <div style={S.card}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+            <h3 style={{ ...S.cardTitle, margin: 0 }}>📄 Modelo JSON</h3>
+            <button
+              style={S.btnExport}
+              onClick={() => {
+                const blob = new Blob([modeloJSON], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'modelo_importacao.json';
+                a.click();
+              }}
+            >
+              ⬇ Baixar Modelo
+            </button>
+          </div>
+          <pre style={{ fontSize: 10, color: '#7d8590', background: '#0d1117', borderRadius: 8, padding: 12, overflow: 'auto', maxHeight: 500, lineHeight: 1.6, margin: 0 }}>
+            {modeloJSON}
+          </pre>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,431 @@
+{
+  "prontuario": {
+    "versao": "1.0",
+    "dataCriacao": "2026-06-01",
+    "mentor": {
+      "nome": "Thiago Meireles",
+      "especialidade": "Mentor Parental",
+      "cnpj": "65.514.239/0001-25",
+      "email": "thiagomeirelesmg@gmail.com",
+      "whatsapp": "(11) 98863-3866"
+    },
+
+    "caso": {
+      "identificacao": "Família Henrique",
+      "tipo": "Mentoria Parental Familiar",
+      "modalidade": "Presencial / Online",
+      "dataInicio": "2026-05-11",
+      "dataPrevisaoTermino": "2026-06-30",
+      "totalSessoesPrevistas": 16,
+      "totalSessoesRealizadas": 5,
+      "status": "Em andamento",
+      "valorContrato": 1200.00,
+      "formaPagamento": "PIX à vista"
+    },
+
+    "clientes": [
+      {
+        "id": "cliente_001",
+        "nome": "Lígia",
+        "papel": "Mãe adotiva",
+        "idade": 51,
+        "telefone": "",
+        "cidade": "Marília",
+        "estado": "SP",
+        "perfil": "Filha única até os 10 anos, sempre sonhou em ser mãe. Criada sob pressão de estudos, aprendeu afeto no primeiro casamento. Pedagoga com especialização em educação especial. Descendência japonesa materna. Traumas físicos (barulho, injeção, vômito) que a impediram de buscar maternidade biológica. Casamento anterior de 20 anos. Conheceu Eduardo no karaokê. Tem necessidade intensa de receber afeto verbal de Henrique.",
+        "padraoRelacional": "Ocupa simultaneamente o papel de mãe amorosa e mãe autoridade, sobrecarregando todos os papéis. Percebida por Henrique como figura de cobrança.",
+        "expectativaFilhoIdeal": "Estudioso, carinhoso, comunicativo, grato, que se assemelhasse a ela. Relação de parceria como dizem que o filho se apega à mãe.",
+        "observacoesCasa": "Eduardo se distancia quando a tensão aumenta, o que deixa Lígia ainda mais nervosa e sobrecarregada."
+      },
+      {
+        "id": "cliente_002",
+        "nome": "Eduardo",
+        "papel": "Pai adotivo",
+        "idade": 53,
+        "telefone": "",
+        "cidade": "Marília",
+        "estado": "SP",
+        "perfil": "Descendência japonesa paterna. Pai rígido e exigente. Iniciou faculdade de TI aos 18 anos, parou após 1 ano. Morou no Japão por 2 anos. Pai faleceu em 2003. Mãe trabalha com ele. Dono de bar de karaokê. Nunca teve desejo forte de ser pai, foi o amor pela Lígia que o trouxe à adoção.",
+        "padraoRelacional": "Pai parceiro, sem firmeza. Funciona como refúgio de Henrique quando há tensão com Lígia. Não confronta, recua para não gerar conflito.",
+        "expectativaFilhoIdeal": "Honesto, trabalhador, que respeita os pais. Esperava que fosse seu braço direito nos afazeres e no trabalho.",
+        "surpresaPositiva": "Henrique chamou de pai, mãe, avô e avó com pouco tempo de convivência.",
+        "desafio": "Henrique se apossa de objetos que percebe não estarem sendo usados para vender.",
+        "acoesCuidado": "Casal optou por fazer terapia juntos para se cuidar durante o processo."
+      },
+      {
+        "id": "cliente_003",
+        "nome": "Henrique",
+        "papel": "Filho adotivo",
+        "idade": 18,
+        "dataNascimento": "março de 2008",
+        "cidade": "Marília",
+        "estado": "SP",
+        "escolaridade": "2º ano do Ensino Médio via EJA (semipresencial)",
+        "autodescricao": ["bom", "legal", "dorminhoco"],
+        "interessesHabilidades": [
+          "Dormir",
+          "Trabalhar",
+          "Jogar",
+          "Lidar com o público",
+          "Inteligência tecnológica não treinada",
+          "Habilidade manual (consertava bicicleta na Cristolândia)",
+          "Forte amor por animais"
+        ]
+      }
+    ],
+
+    "historiaVida": {
+      "henrique": {
+        "maeBiologica": "Faleceu quando Henrique tinha 3 anos, causa: AIDS. Nunca a conheceu.",
+        "paiBiologico": "Figura amorosa e violenta quando bebia. Única memória segura: comprar doces e adotar um cachorro. Faleceu atropelado quando Henrique tinha aproximadamente 12 anos, ao voltar de uma festa. Henrique estava na mesma festa mas voltou antes. Foi acordado à noite com a notícia.",
+        "tiaPaternaValeria": "Acolheu Henrique após a morte do pai. Convivência de aproximadamente 2 anos. Conflitos com a filha da tia. Foi colocado para fora de casa. Henrique não recorda os motivos do conflito.",
+        "lavajato": "Trabalhou e morou em um lava-jato por quase 1 ano após sair da casa da tia. Saiu após uma briga.",
+        "sraMeire": "Psicóloga e advogada que o acolheu e o apresentou a Eduardo (pessoa diferente do pai adotivo). Morou na casa desse Eduardo por 1 ano. Saiu porque não queria estudar.",
+        "vizinhaDai": "Após sair da casa do Eduardo anterior, foi para a casa da vizinha Dai, que acionou a Sra. Meire.",
+        "albergueEAbrigo": "Encaminhado ao albergue e depois ao abrigo. Fugiu do abrigo após 1 dia. Foi encontrado após busca ativa e retornou.",
+        "cristolandiaCrianca": {
+          "periodo": "Aproximadamente 1 ano e 7 meses",
+          "idadeEntrada": 16,
+          "perfil": "Introvertido, autônomo, respeitoso, quieto. Ficava no celular ou consertando sua bicicleta.",
+          "figuraDeApego": "Tia Ana, cuidadora noturna. Tinha proximidade especial com Thiago Meireles (coordenador).",
+          "sentimentoFechamento": "Ficou muito triste quando soube do fechamento. Disse que era um lugar bom.",
+          "motivoAdocao": "Queria ter uma nova família boa."
+        },
+        "programaAdocao": "Adote um Boa Noite — programa de adoção tardia do Estado de São Paulo.",
+        "primeiroContatoLigiaEduardo": "Abril de 2025, por telefone e videochamada.",
+        "primeiroEncontroPresencial": "Julho de 2025. Período de 1 mês de convivência turbulento.",
+        "desacolhimento": "3 de novembro de 2025, partiu para Marília para iniciar adaptação.",
+        "criseJaneiro2026": "Relações ficando insustentáveis. Henrique cogitou sair de casa. Thiago mediou por mais de 3 horas. Situação acalmada.",
+        "aniversario18Anos": "Março de 2026. Thiago ligou para parabenizar. Família relatou que as coisas estavam em paz.",
+        "criseMaio2026": {
+          "data": "3 de maio de 2026",
+          "gatilho": "Casal descobriu tatuagem feita sem consentimento deles.",
+          "escalada": "Ultimato: remover a tatuagem ou sair de casa.",
+          "desfecho": "Henrique pegou suas coisas e saiu. Chegou em Guarulhos às 22h30. Às 1h30 foi até a casa de Thiago.",
+          "resolucao": "Thiago conversou com ele até às 4h da manhã. No dia seguinte mediou com o casal. Henrique voltou para Marília.",
+          "contratacaoMentoria": "Casal contratou mentoria após essa crise."
+        }
+      }
+    },
+
+    "avaliacaoClinica": {
+      "hipotesePrincipal": "Padrão de apego desorganizado com estratégia defensiva predominantemente evitativa, desenvolvido a partir de múltiplas experiências de ruptura vincular, luto precoce e ambientes de cuidado imprevisíveis.",
+      "padraoDeApego": {
+        "tipo": "Desorganizado com estratégia evitativa",
+        "justificativa": "Pai era simultaneamente figura de amor e de violência (apego desorganizado). Mãe ausente desde os 3 anos. Sucessivas rupturas vinculares consolidaram crença central: vínculos terminam. Estratégia evitativa: supressão de necessidade, autonomia forçada, fuga antes de ser abandonado.",
+        "evidencias": [
+          "Na Cristolândia: quieto, autônomo, sem dar trabalho (supressão de necessidade)",
+          "Não verbaliza dor nem pede ajuda diretamente",
+          "Quando a tensão escala, foge (mala, ônibus, saída)",
+          "Não lembra motivos dos conflitos que viveu (dissociação como mecanismo de defesa)",
+          "Testa o vínculo provocando rupturas para verificar se a família permanece"
+        ]
+      },
+      "crencasCentrais": [
+        "Vínculos terminam",
+        "Vou embora antes que me mandem",
+        "Não sou suficiente para ser amado incondicionalmente",
+        "Erro igual abandono"
+      ],
+      "fatoresDeRisco": [
+        "Contato com jovem da favela que tenta induzi-lo à prostituição, drogas e envolvimento com facção criminosa",
+        "Comportamento de se apropriar de objetos do casal para vender (padrão de sobrevivência aprendido na rua)",
+        "Frase: tenho medo de mim mesmo, medo de machucar fisicamente eles (fato não revelado no passado)",
+        "Defasagem escolar severa com dificuldade de leitura, escrita e matemática",
+        "Rotina de sono desequilibrada, dorme tarde e acorda com mau humor intenso"
+      ],
+      "fatoresDeProtecao": [
+        "Escolheu ficar após múltiplas oportunidades de ruptura",
+        "Chama Lígia e Eduardo de pai e mãe",
+        "Tem consciência do próprio potencial agressivo (sinal de insight)",
+        "Manteve proximidade com figura de vínculo seguro (Thiago)",
+        "Demonstra afeto de formas concretas",
+        "Habilidades relacionais com o público",
+        "Inteligência tecnológica não treinada com potencial de desenvolvimento"
+      ],
+      "investigacoesNecessarias": [
+        "Fato não revelado relacionado ao medo de machucar fisicamente",
+        "Possível diagnóstico de dislexia ou transtorno de aprendizagem não identificado",
+        "Avaliação de saúde mental: sinais de ansiedade ou depressão"
+      ],
+      "fundamentacaoTeorica": [
+        "Bowlby — Teoria do Apego",
+        "Van der Kolk — Trauma relacional e memória somática",
+        "Siegel — Janela de tolerância e neurociência do desenvolvimento",
+        "Erikson — Crise de identidade vs confusão de papel (17-18 anos)",
+        "Piaget — Pensamento formal sem ancoragem emocional",
+        "Purvis e Cross — TBRI (Trust-Based Relational Intervention)",
+        "Dweck — Mindset de crescimento",
+        "Nelsen — Disciplina positiva: afeto + firmeza"
+      ]
+    },
+
+    "avaliacaoCasal": {
+      "dinamicaCentral": "Triângulo disfuncional: Lígia cobra, Henrique foge para Eduardo, Eduardo não confronta, Lígia se isola e aumenta pressão.",
+      "desequilibrio": "Lígia ocupa sozinha os papéis de mãe amorosa e mãe autoridade. Eduardo no papel de pai parceiro sem firmeza.",
+      "cicloDisfuncional": [
+        "Lígia cobra Henrique",
+        "Henrique resiste e sente ameaça ao vínculo",
+        "Henrique se aproxima de Eduardo que não confronta",
+        "Lígia sente que está sozinha e cobra mais",
+        "Henrique ameaça ir embora",
+        "Família cogita desistir",
+        "Confirma o medo de abandono de Henrique",
+        "Ciclo recomeça mais desgastado"
+      ],
+      "filhoIdealLigia": "Estudioso, carinhoso, comunicativo, grato, que se assemelhasse a ela e se apegasse como filho à mãe.",
+      "filhoIdealEduardo": "Honesto, trabalhador, que respeita os pais e que fosse seu braço direito.",
+      "tensaoConjugal": "Eduardo se distancia quando a tensão aumenta. Lígia fica nervosa. Às vezes brigam porque ela cobra mais firmeza dele.",
+      "recurso": "Casal optou por fazer terapia. Vínculos reais já formados: Lígia diz que se sente cuidada por Henrique. Eduardo sente Henrique como companheiro."
+    },
+
+    "planoAtendimento": {
+      "abordagem": "Mentoria Parental Familiar com ênfase em TBRI",
+      "tresFilaresTBRI": [
+        {
+          "pilar": 1,
+          "nome": "Conexão antes da correção",
+          "descricao": "O vínculo precisa preceder qualquer exigência ou limite. Conexão não é permissividade, é o solo onde a autoridade pode crescer."
+        },
+        {
+          "pilar": 2,
+          "nome": "Regulação antes da exigência",
+          "descricao": "Reconhecer quando Henrique está desregulado e ajudá-lo a regular antes de qualquer correção. Exigir comportamento de alguém desregulado não funciona."
+        },
+        {
+          "pilar": 3,
+          "nome": "Correção com vínculo e propósito",
+          "descricao": "Limites claros, breves, firmes e amorosos dentro de uma relação segura. Correção não é punição, é cuidado."
+        }
+      ],
+      "estruturaSessoes": {
+        "totalSessoes": 16,
+        "periodicidade": "Semanal",
+        "formato": [
+          "2 encontros com família toda (90 min)",
+          "7 sessões com o casal às terças-feiras 14h (90 min)",
+          "7 sessões individuais com Henrique às terças-feiras 9h (90 min)"
+        ],
+        "periodoContrato": "11/05/2026 a 30/06/2026"
+      }
+    },
+
+    "sessoesRealizadas": [
+      {
+        "numero": 1,
+        "tipo": "Família toda",
+        "data": "2026-05-11",
+        "participantes": ["Lígia", "Eduardo", "Henrique"],
+        "resumo": "Apresentação do processo de mentoria. Escuta de cada membro da família. Henrique presente e fechado. Casal frustrado com mentiras e agressividade de Henrique. Lígia relata se sentir cuidada por ele. Eduardo o sente como companheiro. Henrique diz que o mais difícil é escola, inglês e trabalho. Diz ter medo de machucar fisicamente os pais. Pacto de continuidade estabelecido.",
+        "tarefas": [
+          "Eduardo: apoiar publicamente a posição da Lígia uma vez na semana",
+          "Lígia: observar um gesto de afeto de Henrique do jeito dele",
+          "Casal: alinhar antes de qualquer abordagem com Henrique"
+        ]
+      },
+      {
+        "numero": 2,
+        "tipo": "Casal",
+        "data": "2026-05-13",
+        "participantes": ["Lígia", "Eduardo"],
+        "resumo": "Anamnese do casal. Levantamento de histórico pessoal de Lígia e Eduardo. Questionários respondidos individualmente. Trabalho sobre filho ideal versus filho real. Identificação do triângulo disfuncional. Devolutiva dos questionários. Apresentação dos três pilares do TBRI como fio condutor do processo.",
+        "tarefas": [
+          "Cada um escreve: o filho que imaginava e o Henrique que está conhecendo",
+          "Compartilhar entre si antes da próxima sessão sem julgamento"
+        ],
+        "ancorasBiblicas": ["Sl 127.1", "1 Co 13.6-7"]
+      },
+      {
+        "numero": 3,
+        "tipo": "Henrique individual",
+        "data": "2026-05-13",
+        "participantes": ["Henrique"],
+        "resumo": "Primeira sessão individual com Henrique. Anamnese de história de vida. Exploração da relação com o pai biológico. Morte do pai quando tinha 12 anos, atropelado ao voltar de festa. Período com tia Valéria, saída por conflito. Lava-jato, Sra. Meire, Eduardo anterior, abrigo, Cristolândia. Henrique se disse bem em Marília. Diz querer estar com a família porque gostou deles. Revelou medo de machucar fisicamente os pais mas não revelou o fato específico.",
+        "observacoesClinicas": [
+          "Semblante sério e fechado ao falar do pai",
+          "Não recorda motivos dos conflitos que viveu (dissociação)",
+          "Padrão de esquecimento dos porquês das brigas",
+          "Receptivo ao vínculo com Thiago"
+        ],
+        "tarefas": ["Pedir perdão ao casal pela mentira da tatuagem, agressividade e saída com a menina da favela"]
+      },
+      {
+        "numero": 4,
+        "tipo": "Casal",
+        "data": "2026-05-20",
+        "participantes": ["Lígia", "Eduardo"],
+        "resumo": "Sessão de realinhamento. Devolutiva dos questionários com leitura clínica. Nomeação do triângulo disfuncional sem culpados. Trabalho sobre o papel de Eduardo como pai ativo com firmeza. Ajuste da expectativa de Lígia sobre linguagem de afeto de Henrique. Construção de frente conjugal unida. Orientação sobre comportamento de se apropriar de objetos.",
+        "tarefas": [
+          "Eduardo: apoiar publicamente a posição da Lígia com Henrique",
+          "Lígia: observar momento de cuidado de Henrique do jeito dele",
+          "Casal: 5 minutos de alinhamento antes de qualquer abordagem com Henrique"
+        ],
+        "ancorasBiblicas": ["Ec 4.9-10"]
+      },
+      {
+        "numero": 5,
+        "tipo": "Henrique individual",
+        "data": "2026-05-20",
+        "participantes": ["Henrique"],
+        "resumo": "Semana normal segundo Henrique. Não pediu perdão. Ao ser questionado disse porque não com exaltação intensa e gritos. Thiago contornou a desregulação. Usou dinâmica: Henrique se imagina como pai com filho que contrariou seu direcionamento. Henrique disse que se sentiria triste, bravo e magoado. Disse que dependendo do erro o filho deveria pagar inclusive com a liberdade. Trabalho sobre honra aos pais versus obediência. Conceito de guarda-chuva emocional: decisões sobre o próprio corpo pertencem à fase adulta fora de casa. Henrique demonstrou entendimento e foi se permitindo ser acessado. Considerou pensar em pedir perdão. Terminou a sessão ruminando algo amargo mas necessário. Temas da sessão 5 não avançados por conta da desregulação.",
+        "observacoesClinicas": [
+          "Pedir perdão ativa resposta de ameaça existencial, não ferramenta relacional",
+          "Raiva intensa como defesa contra vulnerabilidade",
+          "Senso de justiça rígido e punitivo, provavelmente formado em ambientes de consequências severas e arbitrárias",
+          "Dinâmica de perspectiva foi eficaz para acessar empatia",
+          "Semente do perdão plantada, precisa de tempo para brotar"
+        ],
+        "orientacaoParaCasal": "Quando Henrique pedir perdão, receber com calma: uma frase simples, sem drama, sem prolongar o tema, seguir em frente normalmente."
+      }
+    ],
+
+    "proximasSessoes": [
+      {
+        "numero": 6,
+        "tipo": "Casal",
+        "dataP": "2026-05-27",
+        "tema": "Conexão antes da correção — identificar e construir momentos concretos de conexão",
+        "pilarTBRI": 1,
+        "objetivos": [
+          "Aprofundar o primeiro pilar do TBRI na prática cotidiana",
+          "Identificar momentos concretos de conexão com Henrique",
+          "Construir novos momentos intencionalmente",
+          "Trabalhar diferença entre conexão e permissividade"
+        ]
+      },
+      {
+        "numero": 7,
+        "tipo": "Henrique individual",
+        "dataP": "2026-05-27",
+        "tema": "Verificação do perdão, medo de machucar e fator de risco menina da favela",
+        "objetivos": [
+          "Verificar se o pedido de perdão aconteceu e como foi",
+          "Aprofundar o medo de machucar com segurança e sem pressão",
+          "Abordar contato com jovem da favela com linguagem de cuidado",
+          "Identidade e pertencimento como alternativa ao risco"
+        ]
+      },
+      {
+        "numero": 8,
+        "tipo": "Casal",
+        "dataP": "2026-06-03",
+        "tema": "Regulação emocional — reconhecer e intervir",
+        "pilarTBRI": 2
+      },
+      {
+        "numero": 9,
+        "tipo": "Henrique individual",
+        "dataP": "2026-06-03",
+        "tema": "Limites, acordos e responsabilidades graduais"
+      },
+      {
+        "numero": 10,
+        "tipo": "Família toda",
+        "dataP": "2026-06-08",
+        "tema": "Mediação familiar — tradução dos conflitos e acordos relacionais"
+      },
+      {
+        "numero": 11,
+        "tipo": "Casal",
+        "dataP": "2026-06-10",
+        "tema": "Correção com vínculo — autoridade sem ruptura",
+        "pilarTBRI": 3
+      },
+      {
+        "numero": 12,
+        "tipo": "Henrique individual",
+        "dataP": "2026-06-10",
+        "tema": "Henrique no sistema familiar — lugar e pertencimento"
+      },
+      {
+        "numero": 13,
+        "tipo": "Casal",
+        "dataP": "2026-06-17",
+        "tema": "Prática integrada — os três pilares no cotidiano"
+      },
+      {
+        "numero": 14,
+        "tipo": "Henrique individual",
+        "dataP": "2026-06-17",
+        "tema": "Projeto de futuro — escola, trabalho e sonhos"
+      },
+      {
+        "numero": 15,
+        "tipo": "Casal",
+        "dataP": "2026-06-24",
+        "tema": "Consolidação — o que construímos e para onde vamos"
+      },
+      {
+        "numero": 16,
+        "tipo": "Família toda",
+        "dataP": "2026-06-30",
+        "tema": "Encerramento e bênção familiar"
+      }
+    ],
+
+    "orientacoesAtivas": {
+      "sonoEDespertar": {
+        "contexto": "Henrique dorme tarde e acorda com mau humor intenso. Tem sessão toda terça às 9h.",
+        "protocolo": [
+          "7h30: acender luz do corredor, não do quarto",
+          "7h45: bater levemente na porta, dizer bom dia e informar sessão às 9h, sair sem esperar resposta",
+          "8h00: repetir chamado uma vez só com calma se não houve movimento",
+          "8h15: deixar café na mesa, não ficar esperando",
+          "Evitar cobrança ou conversa nos primeiros 15 a 20 minutos após o despertar",
+          "Reduzir telas após as 22h",
+          "Manter horário fixo de acordar inclusive no fim de semana"
+        ]
+      },
+      "rotinaSemanalConexao": {
+        "segunda": "Presença leve, sem cobranças, uma refeição juntos sem celular",
+        "terca": "Protocolo de despertar para sessão das 9h, nada de cobrança antes da sessão",
+        "quarta": "Dia de Eduardo: conversa leve sobre algo que Henrique gosta, atividade paralela de 15 a 20 minutos",
+        "quinta": "Dia de Lígia: presença física próxima, preparar algo que ele goste, nomear gestos positivos sem exagero",
+        "sexta": "Ritual noturno: conversa leve no final da noite, boa noite na porta do quarto",
+        "sabado": "Refeição especial, atividade dos três juntos, celebrar pequenas vitórias da semana",
+        "domingo": "Descanso, convite para atividades sem pressão, recarregar emocionalmente"
+      },
+      "principiosConexaoComHenrique": [
+        "Conexão acontece de lado, não de frente. Atividades paralelas funcionam melhor que conversas face a face",
+        "Pedir opinião técnica dele sobre tecnologia ou algo quebrado ativa senso de competência",
+        "Fazer algo com as mãos juntos: consertar, montar, ajustar",
+        "Não buscar retorno afetivo imediato. Conexão com apego evitativo tem latência",
+        "Quando ele recuar, não forçar. Dizer apenas estou aqui e genuinamente deixar",
+        "Boa noite todos os dias na porta do quarto, mesmo sem resposta. O ritual constante constrói segurança",
+        "Nomear comportamentos positivos com frase seca e verdadeira, sem exagero"
+      ],
+      "correc aoELimites": [
+        "Priorizar Eduardo como figura de correção principal neste momento",
+        "Sem sermões longos, sem pressão emocional, sem ultimatos",
+        "Modelo de correção: nomear o comportamento, nomear o impacto, afirmar o vínculo, definir consequência simples, encerrar",
+        "Nunca corrigir quando um dos pais estiver desregulado",
+        "Alinhamento de 5 minutos entre os dois antes de qualquer abordagem com Henrique"
+      ]
+    },
+
+    "comunicacoes": {
+      "grupoWhatsapp": true,
+      "devolutivasEnviadas": [
+        "Análise do caso: quem é cada um no cenário familiar",
+        "Devolutiva sobre sessão 5 com Henrique: o porque não e o que significa",
+        "Psicoeducação sobre sono adolescente com base científica",
+        "Aplicação clínica do sono ao caso de Henrique",
+        "Estratégia semanal completa de conexão dia a dia",
+        "Sugestões de momentos de conexão intencional",
+        "Protocolo de despertar para dias de sessão",
+        "Os três pilares do TBRI apresentados ao casal"
+      ]
+    },
+
+    "ancorasBiblicasUtilizadas": [
+      "Pv 22.6 — Instruí o jovem no caminho em que deve andar",
+      "Ef 6.4 — Pais, não provoqueis vossos filhos à ira",
+      "Hb 12.5-11 — Disciplina como expressão de amor",
+      "Jr 29.11 — Planos de paz e não de mal, futuro e esperança",
+      "Ec 4.9-10 — Melhor é serem dois do que um",
+      "1 Co 13.4-7 — O amor tudo sofre, tudo crê, tudo espera, tudo suporta",
+      "Pv 16.32 — Melhor é o longânimo do que o guerreiro",
+      "Fp 1.6 — Aquele que começou a boa obra a aperfeçoará"
+    ]
+  }
+}

@@ -20,7 +20,8 @@ export function useCollection(collectionName) {
   }, [collectionName]);
 
   const add = async (item) => {
-    await addDoc(collection(db, collectionName), { ...item, createdAt: serverTimestamp() });
+    const ref = await addDoc(collection(db, collectionName), { ...item, createdAt: serverTimestamp() });
+    return ref.id;
   };
 
   const update = async (id, item) => {

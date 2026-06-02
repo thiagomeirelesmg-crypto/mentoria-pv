@@ -1,0 +1,118 @@
+[
+  {
+    "nome": "Henrique (sobrenome)",
+    "telefone": "(11) 99999-0000",
+    "email": "henrique@email.com",
+    "objetivo": "Descreva aqui o objetivo principal do Henrique na mentoria",
+    "status": "ativo",
+    "dataCadastro": "2026-01-01",
+    "prontuario": {
+      "descricaoCaso": "Descreva o caso do Henrique aqui",
+      "planoTerapeutico": "Plano de intervenção para o Henrique",
+      "pilaresTrabalho": ["2. Comunicação com Propósito", "3. Vínculos e Afeto"],
+      "pilarFoco": "2. Comunicação com Propósito",
+      "sessoesContratadas": 10,
+      "sessaoAtual": 3,
+      "metasEspecificas": "Metas específicas do Henrique",
+      "recursosIndicados": "Recursos e leituras indicadas",
+      "tarefasEntreSessoes": "Tarefas práticas entre as sessões",
+      "evolucoes": [
+        {
+          "sessao": "1",
+          "data": "2026-01-07",
+          "pilar": "1. Identidade Parental",
+          "texto": "Descrição da sessão 1 com Henrique"
+        },
+        {
+          "sessao": "2",
+          "data": "2026-01-14",
+          "pilar": "2. Comunicação com Propósito",
+          "texto": "Descrição da sessão 2 com Henrique"
+        }
+      ],
+      "conclusao": "",
+      "dataInicio": "2026-01-07"
+    },
+    "sessoes": [
+      {
+        "data": "2026-01-07",
+        "hora": "09:00",
+        "duracao": 60,
+        "modalidade": "online",
+        "valor": 180,
+        "status": "realizado",
+        "pago": true,
+        "observacoes": "Sessão 1"
+      },
+      {
+        "data": "2026-01-14",
+        "hora": "09:00",
+        "duracao": 60,
+        "modalidade": "online",
+        "valor": 180,
+        "status": "realizado",
+        "pago": true,
+        "observacoes": "Sessão 2"
+      }
+    ],
+    "financeiro": [
+      {
+        "tipo": "receita",
+        "descricao": "Sessão 1 — Henrique",
+        "valor": 180,
+        "data": "2026-01-07",
+        "categoria": "mentoria"
+      }
+    ]
+  },
+  {
+    "nome": "Arthur (sobrenome)",
+    "telefone": "(11) 99999-0001",
+    "email": "arthur@email.com",
+    "objetivo": "Descreva aqui o objetivo principal do Arthur na mentoria",
+    "status": "ativo",
+    "dataCadastro": "2026-01-01",
+    "prontuario": {
+      "descricaoCaso": "Descreva o caso do Arthur aqui",
+      "planoTerapeutico": "Plano de intervenção para o Arthur",
+      "pilaresTrabalho": ["3. Vínculos e Afeto", "4. Limites com Amor"],
+      "pilarFoco": "3. Vínculos e Afeto",
+      "sessoesContratadas": 10,
+      "sessaoAtual": 2,
+      "metasEspecificas": "Metas específicas do Arthur",
+      "recursosIndicados": "Recursos e leituras indicadas",
+      "tarefasEntreSessoes": "Tarefas práticas entre as sessões",
+      "evolucoes": [
+        {
+          "sessao": "1",
+          "data": "2026-01-10",
+          "pilar": "3. Vínculos e Afeto",
+          "texto": "Descrição da sessão 1 com Arthur"
+        }
+      ],
+      "conclusao": "",
+      "dataInicio": "2026-01-10"
+    },
+    "sessoes": [
+      {
+        "data": "2026-01-10",
+        "hora": "11:00",
+        "duracao": 60,
+        "modalidade": "presencial",
+        "valor": 180,
+        "status": "realizado",
+        "pago": true,
+        "observacoes": "Sessão 1"
+      }
+    ],
+    "financeiro": [
+      {
+        "tipo": "receita",
+        "descricao": "Sessão 1 — Arthur",
+        "valor": 180,
+        "data": "2026-01-10",
+        "categoria": "mentoria"
+      }
+    ]
+  }
+]
